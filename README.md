@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+A closure is when a function returns another function, so that the returned function has access to the local scope of the function that returned which persists between calls.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +65,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+the anonymous function returned by `personalDice` has access to `name` which is in the scope of `personalDice`
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+the value rolled could change but the name will remain the same
 c. What is the lexical scope of `newRoll`? 
+`newRoll` is local to the anonymous function it's defined in
 
 
 ### Task 3 - Stretch Goals
